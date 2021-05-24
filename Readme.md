@@ -2,9 +2,9 @@
 The test project won't be used in any real environment.
 
 
-##Solution Implementation
+## Solution/Implementation
 
-Steps followed
+**Steps followed**
 
 - Created a model Reservation, added FK to Listing and Hotel Room
 - Added Unique constraints in Reservation model to avoid double booking the same room

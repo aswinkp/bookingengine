@@ -16,6 +16,9 @@ def post_or_get(request, key, default=None):
 
 
 class UnitView(generics.ListAPIView):
+    """
+    Returns list of Units based on the check_in, check_out and max_price
+    """
     serializer_class = UnitResponseSerializer
 
     def get_queryset(self):
