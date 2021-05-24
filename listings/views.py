@@ -20,7 +20,7 @@ class UnitView(generics.ListAPIView):
 
     def get_queryset(self):
         serializer = UnitRequestSerializer(data=self.request.GET)
-        serializer.is_valid()
+        serializer.is_valid(raise_exception=True)
         validated_data = serializer.validated_data
 
         check_in = validated_data['check_in']
