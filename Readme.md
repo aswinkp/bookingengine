@@ -2,6 +2,15 @@
 The test project won't be used in any real environment.
 
 
+##Solution Implementation
+
+Steps followed
+
+- Created a model Reservation, added FK to Listing and Hotel Room
+- Added Unique constraints in Reservation model to avoid double booking the same room
+- Added urls, views, serializers to create an API.
+- Added validation to serializers to avoid wrong input
+
 ## Summary:
 
 Extend Django Project with Django REST Framework for a simple prebuild booking app that have:
